@@ -1,0 +1,28 @@
+.heart {
+    font-size: 25px;
+    cursor: pointer;
+    & .empty-heart {
+      position: absolute;
+      top: 25px;
+      right: 24px;
+      background-color: $footer-txtcolor;
+      z-index: 100;
+      transition: all .250s linear;
+        &:hover {
+        animation: heart 1s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
+        }
+    }    
+    & .full-heart {
+        @include background;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color: transparent;
+        background-size: cover;
+        position: absolute;
+        top: 25px;
+        right: 24px;
+    }
+}
+  
+   
+  

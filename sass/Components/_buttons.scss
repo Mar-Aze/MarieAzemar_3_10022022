@@ -3,9 +3,8 @@
     color: $footer-txtcolor;
     padding: 16px;
     border: 1px;
-    border-color: $secondary-color $primary-color $primary-color $secondary-color;
     border-radius: 50px;
-    background: linear-gradient(to left top, $primary-color, $secondary-color);
+    @include background;
     cursor: pointer;
     @include box-shadow; 
     transition: all 400ms linear;
@@ -20,7 +19,7 @@
     font-weight: bold;
     font-size: 0.9em;
     background-color: $main-bgcolor;
-    padding: 16px 16px 16px 32px;
+    padding: 16px 32px;
     border-radius: 16px;
     border: 1px solid $main-bgcolor;
     width: 100%;
@@ -33,6 +32,7 @@
     transition: all .250s linear;
     &:hover {
         background-color: $lightprimary-color;
+        @include strongerbox-shadow;
         .operation__form__icon {
             color: $primary-color;
         }
