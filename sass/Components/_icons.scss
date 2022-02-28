@@ -3,8 +3,8 @@
     cursor: pointer;
     & .empty-heart {
       position: absolute;
-      top: 25px;
-      right: 25px;
+      top: 220px;
+      right: 16px;
       background-color: $footer-txtcolor;
       z-index: 100;
       transition: all .250s linear;
@@ -19,8 +19,8 @@
         color: transparent;
         background-size: cover;
         position: absolute;
-        top: 25px;
-        right: 25px;
+        top: 220px;
+        right: 16px;
     }
 }
   
