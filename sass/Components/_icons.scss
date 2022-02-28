@@ -1,3 +1,5 @@
+/*Option 1*/
+
 .heart {
     font-size: 25px;
     cursor: pointer;
@@ -7,7 +9,7 @@
       right: 16px;
       background-color: $footer-txtcolor;
       z-index: 100;
-      transition: all .250s linear;
+      transition: animation 2s linear;
         &:hover {
         animation: heart 1s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
         }
@@ -22,7 +24,29 @@
         top: 220px;
         right: 16px;
     }
+    
+    /*&::before {
+        content: "";
+        position: absolute;
+        top: 220px;
+        right: 16px;
+        width: 100%;
+        height: 100%;
+        color: transparent;
+        @include background;
+        background-clip:text;
+        -webkit-background-clip:text;
+        overflow: hidden;
+        animation: animate 6s infinite;
+    }*/
 }
+
   
-   
-  
+
+
+ 
+
+
+
+
+

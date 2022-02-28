@@ -17,6 +17,14 @@
                 & i {
                     background-color: $main-bgcolor;
                 }
+        & .empty-heart {
+            top:46px;
+            right: 22px;
+                    }
+        & .full-heart {
+            top:46px;
+            right: 22px;
+        }
         }
         & .menu__form {
             & .menu__form--desktop {
