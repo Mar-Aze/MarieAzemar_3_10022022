@@ -115,6 +115,8 @@ h1 {
   padding: 16px;
   border: 1px;
   border-radius: 50px;
+  width: 60%;
+  max-width: 600px;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   cursor: pointer;
   box-shadow: 1px 3px 2px 1px #e6e4e4;
@@ -157,7 +159,7 @@ h1 {
 .heart .empty-heart {
   position: absolute;
   top: 25px;
-  right: 24px;
+  right: 25px;
   background-color: white;
   z-index: 100;
   transition: all 0.25s linear;
@@ -173,7 +175,7 @@ h1 {
   background-size: cover;
   position: absolute;
   top: 25px;
-  right: 24px;
+  right: 25px;
 }
 
 .header a {
@@ -274,7 +276,7 @@ h1 {
 .presentation p {
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   color: #353535;
   font-weight: 300;
 }
@@ -286,7 +288,7 @@ h1 {
   font-size: 1.5em;
 }
 .presentation .pinkbutton {
-  margin: 10px 70px 60px 70px;
+  margin: 50px auto;
 }
 
 .operation {
@@ -316,6 +318,11 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .operation li {
+    width: 300px;
   }
 }
 .operation p {
@@ -429,6 +436,19 @@ h1 {
 }
 .menu .menu__h1 i {
   background-color: #F6F6F6;
+}
+@media only screen and (min-width: 992px) {
+  .menu .menu__form .menu__form--desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu .menu__form .menu__form--section {
+    width: 33%;
+  }
 }
 .menu .menu__form h2 {
   border: solid 3px transparent;

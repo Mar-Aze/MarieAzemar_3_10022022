@@ -54,7 +54,7 @@
     & p {
         text-align: center;
         margin: 0;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         color: $footer-bgcolor;
         font-weight:300;
         }
@@ -66,7 +66,7 @@
             font-size:$hometitle-size;
     }
     & .pinkbutton {
-        margin: 10px 70px 60px 70px;
+        margin: 50px auto;
     }
 }
 
@@ -94,6 +94,11 @@
                 flex-direction: row;
                 justify-content: center;
                 gap: 40px;
+            }
+        }
+        & li {
+            @media only screen and (min-width: 768px) {
+                width: 300px;
             }
         }
         & p {
