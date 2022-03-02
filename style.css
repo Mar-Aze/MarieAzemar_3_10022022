@@ -481,6 +481,7 @@ h1 {
   font-size: 1em;
   font-weight: 400;
   margin: 30px 0 20px 0;
+  text-transform: uppercase;
 }
 .menu .menu__form .h2__decoration {
   border-bottom: solid 4px #99E2D0;
