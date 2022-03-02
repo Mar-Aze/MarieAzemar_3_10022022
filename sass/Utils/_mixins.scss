@@ -9,3 +9,9 @@
 @mixin background {
     background: linear-gradient(to left top, $primary-color, $secondary-color);
 }
+
+@mixin overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
