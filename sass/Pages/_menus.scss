@@ -24,6 +24,9 @@
         & .full-heart {
             top:46px;
             right: 22px;
+            &:hover {
+                top: 42px;
+            }
         }
         }
         & .menu__form {

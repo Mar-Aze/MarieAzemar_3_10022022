@@ -152,30 +152,54 @@ h1 {
   color: #9356DC;
 }
 
-.heart {
+/*Option 1 */
+/*.heart {
+    font-size: 25px;
+    cursor: pointer;
+    & .empty-heart {
+      position: absolute;
+      top: 220px;
+      right: 16px;
+      background-color: $footer-txtcolor;
+      z-index: 100;
+      transition: animation 0.5s linear;
+        &:hover {
+        animation: heart 1s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
+        }
+    }    
+    & .full-heart {
+        @include background;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color: transparent;
+        background-size: cover;
+        position: absolute;
+        top: 220px;
+        right: 16px;        
+    }
+}*/
+/*Option 2 */
+.heart .empty-heart {
+  display: none;
+}
+
+.full-heart {
   font-size: 25px;
   cursor: pointer;
-}
-.heart .empty-heart {
   position: absolute;
   top: 220px;
   right: 16px;
-  background-color: white;
-  z-index: 100;
-  transition: animation 0.5s linear;
+  font-weight: 100 !important;
+  transition: all 0.5s ease-in-out;
 }
-.heart .empty-heart:hover {
-  animation: heart 1s cubic-bezier(0.88, -0.03, 1, 0.53) 1 both;
-}
-.heart .full-heart {
+.full-heart:hover {
+  font-weight: 900 !important;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-size: cover;
-  position: absolute;
-  top: 220px;
-  right: 16px;
+  font-size: 28px;
 }
 
 .header a {
@@ -444,6 +468,9 @@ h1 {
 .menu .menu__h1 .full-heart {
   top: 46px;
   right: 22px;
+}
+.menu .menu__h1 .full-heart:hover {
+  top: 42px;
 }
 @media only screen and (min-width: 992px) {
   .menu .menu__form .menu__form--desktop {
