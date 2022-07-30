@@ -6,7 +6,7 @@ Utilisation du SASS
 
 # Page Web
 
-https://mar-aze.github.io/MarieAzemar_3_10022022/
+https://mar-aze.github.io/OhMyFood/
 
 # Spécifications techniques et graphiques
 
